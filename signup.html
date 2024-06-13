@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="Css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Css/main.css" />
+  </head>
+  <body>
+    <div class="login container">
+      <div class="row g-0 mt-5 me-0 pe-0">
+        <div class="col-lg-6 d-flex align-items-center">
+          <div class="pic">
+            <div class="img">
+              <img
+                class="w-100"
+                src="imgs/vecteezy_cloud-computing-modern-flat-concept-for-web-banner-design_5879539.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 g-0">
+          <div class="login-inputs">
+            <div
+              class="d-flex flex-wrap justify-content-center align-items-center"
+            >
+              <div class="crud">
+                <h1 class="m-3 p-3 text-white fw-bold">Smart login</h1>
+              </div>
+
+              <div class="mb-3 w-75">
+                <label for="userName" class="form-label text-white fw-bolder"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control mb-1"
+                  id="userName"
+                  placeholder="Enter Your Name "
+                />
+                <div
+                  class="alert alert-danger p-2 d-none"
+                  id="alert"
+                  role="alert"
+                >
+                  The first character must be a letter
+                </div>
+              </div>
+
+              <div class="mb-3 w-75">
+                <label for="email" class="form-label text-white fw-bolder"
+                  >Email</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter Your Email "
+                />
+              </div>
+
+              <div class="mb-3 w-75">
+                <label for="password" class="form-label text-white fw-bolder"
+                  >password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="Enter Your password"
+                />
+              </div>
+
+              <div class="w-75 mt-3 sub-b">
+                <button
+                  id="signup"
+                  type="button"
+                  class="btn btn-login w-50 p-2"
+                >
+                  Sign Up
+                </button>
+                <p class="text-white m-2 lead">
+                  You have an account?
+                  <a class="text-white" href="index.html">Signin </a>
+                </p>
+                <div class="alerts">
+                  <div
+                    class="alert alert-success d-none"
+                    id="success"
+                    role="alert"
+                  >
+                    success !
+                  </div>
+
+                  <div
+                    class="alert alert-danger p-2 d-none"
+                    id="check"
+                    role="alert"
+                  >
+                    email already exists
+                  </div>
+                  <div
+                    class="alert alert-danger p-2 d-none"
+                    id="inputsCheck"
+                    role="alert"
+                  >
+                    All inputs is required
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/650483a6d4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

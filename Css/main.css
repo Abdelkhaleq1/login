@@ -1,0 +1,32 @@
+body {
+  background-color: #ffffff;
+}
+.login {
+  box-shadow: 1px 1px 50px 10px #a2a2a6;
+}
+.crud {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.login-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1c1678;
+  height: 80vh;
+}
+.btn-login {
+  background-color: #8576ff;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+.btn-login:hover {
+  background-color: #060220;
+  color: #d3dbe0;
+}
+img {
+  height: auto;
+}
+.container {
+  padding-right: 0;
+}
