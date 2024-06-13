@@ -28,7 +28,7 @@ function isPasswordExist(password) {
 }
 
 function login() {
-  if (email.value !== "" && password.value !== "") {
+  if (email.value !== "" || password.value !== "") {
     if (isPasswordExist(password.value) && isEmailExist(email.value)) {
       window.location = "/home.html";
     } else {
@@ -36,7 +36,7 @@ function login() {
       passAndEmailChk.classList.remove("d-none");
     }
   }
-  if (email.value == "" && password.value == "") {
+  if (email.value == "" || password.value == "") {
     inputsCheck.classList.remove("d-none");
     passAndEmailChk.classList.add("d-none");
   }
