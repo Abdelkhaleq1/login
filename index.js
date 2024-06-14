@@ -44,7 +44,7 @@ function signup() {
     password.value !== ""
   ) {
     if (!isEmailExist(email.value)) {
-      let user = {
+      var user = {
         name: userName.value,
         email: email.value,
         password: password.value,
