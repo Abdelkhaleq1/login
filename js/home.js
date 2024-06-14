@@ -8,7 +8,7 @@ if (localStorage.getItem("usersContainer") !== null) {
 console.log(users);
 
 function logout() {
-  window.location = "/index.html";
+  window.location = "/login/index.html";
 }
 logoutBtn.addEventListener("click", function () {
   logout();
