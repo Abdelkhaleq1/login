@@ -37,7 +37,7 @@ console.log(users);
 function signup() {
   if (
     validation(userName) == true &&
-    email.value !== "" &&
+    email.value !== "" ||
     password.value !== ""
   ) {
     if (!isEmailExist(email.value)) {
@@ -61,7 +61,7 @@ function signup() {
     }
   }
 
-  if (email.value == "" && password.value == "") {
+  if (email.value == "" || password.value == "") {
     inputsCheck.classList.remove("d-none");
     check.classList.add("d-none");
     succAlert.classList.add("d-none");
