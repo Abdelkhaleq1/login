@@ -74,7 +74,7 @@ function signup() {
 function login() {
   if (email.value !== "" || password.value !== "") {
     if (isPasswordExist(password.value) && isEmailExist(email.value)) {
-      window.location = "/home.html";
+      window.location = '/home.html';
     } else {
       inputsCheck.classList.add("d-none");
       passAndEmailChk.classList.remove("d-none");
