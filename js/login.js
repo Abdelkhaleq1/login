@@ -30,7 +30,7 @@ function isPasswordExist(password) {
 function login() {
   if (email.value !== "" || password.value !== "") {
     if (isPasswordExist(password.value) && isEmailExist(email.value)) {
-      window.location = "/.home.html";
+      window.location = "/login/home.html";
     } else {
       inputsCheck.classList.add("d-none");
       passAndEmailChk.classList.remove("d-none");
